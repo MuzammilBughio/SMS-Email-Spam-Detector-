@@ -51,8 +51,8 @@ input_sms = st.text_area(
 if st.button('Predict'):
 
     # Preprocess
-    transform_sms = tranform_text(input_sms)
-
+    transform_sms = transform_text(input_sms)
+    
     # Vectorize
     vector_input = tfidf.transform([transform_sms])
 
